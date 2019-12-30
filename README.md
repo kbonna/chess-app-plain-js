@@ -1,26 +1,31 @@
-# Frontend chess application
+# Chess application
 
-## Project requirements
+This is interactive chess application for two-players. It is responsive and implements all features of real chess. 
 
-- interactive chessboard with drag & drop pieces
-- implemented game mechanisms:
-    - movement checking 
-    - capturing pieces
-    - castling
-    - *en passant*
-    - promotion
-    - check detection
-    - checkmate detection
-- board and side panel
-- side panel functionality:
-    - clock: counter for both players
-    - button: pause clock
-    - select menu: set time
-    - button: game restart
-    - button: swap sides
+Click [**here**](https://kbonna.github.io/chess-app-plain-js/) to play!
 
-App should block after finished game.
+## Application features
 
-## Technologies
+1. Interactive chessboard with movement checking and board highlighting. 
+2. Two players (no single-player mode)
+3. All chess moves available including:
+	- capturing enemy pieces
+	- castling
+	- *en passant*
+4. Check and checkmate detection with UI warnings.
+5. Interactive promotion panel.
+6. Side control panel.
+7. Timer with different time settings and start / pause button.
+8. Side switching and game reset.
+9. Automatic blocking after finished game.
 
-Game will be created using HTML, CSS and vanilla JS. Sass preprocessor and BEM convention will be used along. Object oriented approach will be used for JS.
+
+## Used Technologies
+
+Game was created using only:
+
+- vanilla JS
+- HTML 
+- CSS
+
+Sass preprocessor and BEM naming convention was used for CSS. Object oriented approach was used for JS with separate classes for chess logic, timer and UI. Chess class is well tested using `jest`, with most important parts documented using `jsdoc` scheme. This project was created as a learning experience with JavaScript.
