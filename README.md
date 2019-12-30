@@ -1,6 +1,8 @@
 # Chess application
 
-This is interactive chess application for two-players. It is responsive and implements all features of real chess. Click [**here**](https://kbonna.github.io/chess-app-plain-js/) to play!
+This is interactive chess application for two-players. It is responsive and implements all features of real chess. 
+
+Click [**here**](https://kbonna.github.io/chess-app-plain-js/) to play!
 
 ## Application features
 
