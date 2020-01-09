@@ -15,6 +15,11 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
 *,
 *::before,
 *::after {
@@ -261,9 +266,38 @@ body {
   width: 4rem;
 }
 
+.clock__setting-wrapper {
+  position: relative;
+}
+
 .clock__setting {
-  text-align: center;
+  text-align: left;
   width: 100%;
+  background-color: white;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  line-height: 2em;
+  cursor: pointer;
+  padding-left: 1em;
+}
+
+.clock__setting-wrapper::after {
+  content: '';
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  margin-top: -5px;
+  border-top: 8px solid #ccc;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  pointer-events: none;
+}
+
+.clock__setting:focus {
+  border-color: #777;
 }
 
 .options {
